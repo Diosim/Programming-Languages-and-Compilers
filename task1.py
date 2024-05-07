@@ -58,7 +58,6 @@ def check_DFA(expression, left_char, right_char, stack):
             if not is_empty(stack) and peek(stack) == left_char:
                 pop(stack)  # Pop the corresponding left character
                 stack_level -= 1  # Decrement stack level if a left character is popped
-            ayta
             remaining_expression = expression[position:]  # Calculate remaining expression
             print("Move:", move_counter, "|| Pop'ing '", left_char, "'", "|| Input: ", remaining_expression, " " * move_counter  ,"|| Stack level: V", "I" * (len(stack) +1), " "* stack_level ,"|| Current stack:", stack)
             move_counter += 1  # Increment move counter for pop action
